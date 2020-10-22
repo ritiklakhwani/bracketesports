@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+ <title>APPLY FOR MEMBERSHIP</title>
+ <link rel="stylesheet" type="text/css" href="css/apply.css">
+</head>
+<body class="body">
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <header>
+        <div class="main">
+            <ul>
+               <li class="active"><a href="clanrequirements.html">CLAN REQUIREMENTS</a></li> 
+               <li class="active"><a href="inclanmembers.html">IN CLAN MEMBERS</a></li>
+               <li class="active"><a href="pm.html">PAID MEMBERSHIP</a></li>  
+            </ul>
+        </div>
+        <a href="index.html">
+            <div class="about">
+                <h2>⭗ PUBG MOBILE OFFICIAL </h2>
+            </div>
+        </a>
+        <form method="post" autocomplete="off" name="google-sheet">
+                <div class="form-group1">
+                        IN GAME NAME - <input type="text" name="IN GAME NAME" class="form-control"  value="" required=""/>
+                    </div>
+                    <div class="form-group2">
+                        IN GAME ID - <input type="number" name="IN GAME ID" class="form-control"  value="" required=""/>
+                    </div>
+            <div class="form-group3">
+                        PREVIOUS CLAN - <input type="text" name="PREVIOUS CLAN" class="form-control"  value="" required=""/>
+                        </div>
+            <div class="button">
+                    <input type="submit" name="submit" class="btn" value="SUBMIT">
+            </div>
+        </form>
+    <!-- <div class="form">
+        ∘ IN GAME NAME : <input type="text" name=""><br><br>
+        ∘ IN GAME ID : <input type="text" name=""><br><br>
+        ∘ KILL/DEATH (KD) : <input type="text" name=""><br><br>
+        ∘ NO. OF TOURNAMENTS PLAYED : <input type="text" name=""><br><br>
+        ∘ D.O.B : <input type="date" name=""><br><br>
+        ∘ E-MAIL ID : <input type="text" name=""><br><br>
+        ∘ PHONE NO. : <input type="text" name=""><br><br>
+        ∘ POSITION. : <input type="text" name=""><br><br>
+        ∘ GENDER : <input type="RADIO" name="GENDER"> &nbsp;&nbsp; MALE  &nbsp;&nbsp;<input type="RADIO" color="black" name="GENDER">  &nbsp;&nbsp; FEMALE<br><br>
+             ∘ (optional) ANY CERTIFICATES : <input type="file"><br/><br/>
+            ∘ DO YOU HAVE A RENAME CARD? : <input type="RADIO" name="id card">&nbsp;&nbsp; YES &nbsp;&nbsp; <input type="RADIO" name="id card"> &nbsp;&nbsp;I WILL BUY IT<br><br>
+    </div>
+    <div class="button">
+        <a href="apply.html" type="submit" class="btn" value="login">SUBMIT</a>
+    </div> -->
+    </header>
+    <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxDrVPpohjOu877TrzXvUpWnYWWm-wIE0bV3FmYp3tIjrX4ARjx/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+</body>
+</html>

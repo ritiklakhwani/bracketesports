@@ -1,0 +1,117 @@
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	font-family: century Gothic;
+ }
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../1-0.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	 overflow: hidden;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+ul li{
+	display: inline-block;
+
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 25px;
+	font-size: 15px;
+	font-weight: bold;
+	
+
+
+}
+
+a:hover{
+	color: yellow;
+}
+ul li.active a{
+
+}
+ 
+
+.about{
+	position: absolute;
+	top: 1.75%;
+	left: 2.25%;
+	font-weight: bold;
+	color: #fff;
+
+}
+.about:hover{
+	color: yellow;
+}
+
+.body{
+	 overflow: hidden;
+	 background-color: #000
+}
+.lines{
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	font-weight: bold;
+	color: #fff;
+	transition: 0.6s ease;
+	transform: translate(0%,-50%);
+}
+.p{
+	position: absolute;
+	top: 20%;
+	left: 41%;
+	font-weight: bold;
+	color: #fff;
+	transition: 0.6s ease;
+	transform: translate(0%,-50%);
+}/*********/
+/*     02. Preloader     */
+/*********/
+  .spinner-wrapper {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #2f2c3d;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%; /* centers the loading animation vertically one the screen */
+	left: 50%; /* centers the loading animation horizontally one the screen */
+	width: 3.75rem;
+	height: 1.25rem;
+	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */
+	text-align: center;
+}
+
+.spinner > div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #fff;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
